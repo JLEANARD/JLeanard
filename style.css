@@ -314,3 +314,21 @@ footer{
   animation: glowPulse 2.4s ease-in-out infinite;
 }
 
+/* ===== Scroll reveal base ===== */
+.reveal{
+  opacity: 0;
+  transform: translateY(14px);
+  transition: opacity 700ms ease, transform 700ms ease;
+}
+
+.reveal.show{
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Respect accessibility settings */
+@media (prefers-reduced-motion: reduce){
+  .reveal{ opacity: 1; transform: none; transition: none; }
+  .btn.primary{ animation: none; }
+}
+
