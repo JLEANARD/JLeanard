@@ -1,277 +1,112 @@
-/* =========================
-   Minimal + Creative (Dark)
-   Video Editor Portfolio
-   ========================= */
+<body>
+  <div class="container">
 
-:root{
-  --bg: #0b0b0f;
-  --panel: #12121a;
-  --panel2: #161622;
-  --text: #f3f3f6;
-  --muted: rgba(243,243,246,0.72);
-  --stroke: rgba(255,255,255,0.10);
-  --accent: #00bcd4;
-  --accent2: #ff4d4d;
-}
+    <div class="nav">
+      <div class="brand">Leanard • Video Editor</div>
+      <div class="navlinks">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#work">Work</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
 
-*{ box-sizing: border-box; }
-html{ scroll-behavior: smooth; }
-body{
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: radial-gradient(1000px 600px at 20% -10%, rgba(0,188,212,0.16), transparent 60%),
-              radial-gradient(900px 600px at 90% 10%, rgba(255,77,77,0.12), transparent 55%),
-              var(--bg);
-  color: var(--text);
-  line-height: 1.65;
-}
+    <section class="section hero">
+      <h1>Leanard Guiriba</h1>
+      <p class="role">Minimal, clean edits with strong pacing, captions, and social-media-ready output.</p>
+      <div class="actions">
+        <a class="btn primary" href="#work">View My Work</a>
+        <a class="btn secondary" href="cv.pdf" target="_blank">Download CV</a>
+      </div>
+    </section>
 
-a{
-  color: var(--accent);
-  text-decoration: none;
-}
-a:hover{ text-decoration: underline; }
+    <section id="about" class="section">
+      <h2>About Me</h2>
+      <div class="grid2">
+        <div class="card">
+          <p>I edit short-form and long-form videos with a focus on storytelling, retention, and clean sound.</p>
+          <p class="small">Available for freelance & remote work.</p>
+        </div>
+        <div class="card">
+          <h3>Quick Info</h3>
+          <p class="small">Platforms: YouTube • TikTok • Reels</p>
+          <p class="small">Turnaround: 24–72 hours</p>
+          <div class="chips">
+            <span class="chip">Captions</span>
+            <span class="chip">Pacing</span>
+            <span class="chip">Audio Cleanup</span>
+          </div>
+        </div>
+      </div>
+    </section>
 
-.container{
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 44px 18px 60px;
-}
+    <section id="skills" class="section">
+      <h2>Skills</h2>
+      <div class="chips">
+        <span class="chip">Cutting</span>
+        <span class="chip">Storytelling</span>
+        <span class="chip">Color Correction</span>
+        <span class="chip">Basic Grading</span>
+        <span class="chip">Sound Sync</span>
+        <span class="chip">Subtitles</span>
+        <span class="chip">Premiere Pro</span>
+        <span class="chip">DaVinci Resolve</span>
+      </div>
+    </section>
 
-/* ===== Top Nav (optional) ===== */
-.nav{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 14px;
-  padding: 12px 14px;
-  border: 1px solid var(--stroke);
-  background: rgba(18,18,26,0.72);
-  border-radius: 16px;
-  position: sticky;
-  top: 12px;
-  backdrop-filter: blur(10px);
-  z-index: 10;
-}
+    <section id="work" class="section">
+      <h2>Selected Work</h2>
+      <div class="projects">
 
-.brand{
-  font-weight: 700;
-  letter-spacing: 0.3px;
-}
+        <div class="project">
+          <img class="thumb" src="assets/images/sample1.jpg" alt="Project 1">
+          <div class="pbody">
+            <h3>Short-form Reels Edit</h3>
+            <p>Fast cuts + captions for mobile viewing.</p>
+            <div class="plinks">
+              <a class="pill" href="https://youtube.com" target="_blank">Watch</a>
+              <a class="pill" href="https://drive.google.com" target="_blank">Files</a>
+            </div>
+          </div>
+        </div>
 
-.nav a{
-  color: var(--text);
-  opacity: 0.9;
-  margin-left: 12px;
-}
-.nav a:hover{ opacity: 1; text-decoration: none; }
+        <div class="project">
+          <img class="thumb" src="assets/images/sample2.jpg" alt="Project 2">
+          <div class="pbody">
+            <h3>YouTube Video Edit</h3>
+            <p>Clean storytelling + audio leveling.</p>
+            <div class="plinks">
+              <a class="pill" href="https://youtube.com" target="_blank">Watch</a>
+              <a class="pill" href="https://drive.google.com" target="_blank">Files</a>
+            </div>
+          </div>
+        </div>
 
-/* ===== Sections ===== */
-section{
-  margin-top: 22px;
-  padding: 26px;
-  background: linear-gradient(180deg, rgba(18,18,26,0.95), rgba(18,18,26,0.78));
-  border: 1px solid var(--stroke);
-  border-radius: 18px;
-}
+      </div>
+    </section>
 
-h1,h2,h3{
-  margin: 0 0 10px;
-  line-height: 1.2;
-}
-h2{
-  font-size: 22px;
-  letter-spacing: 0.2px;
-}
-p{ margin: 0 0 10px; color: var(--muted); }
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <div class="contact">
+        <div class="card">
+          <p><b>Email</b><br>
+            <a href="mailto:johnleanardguiriba48@gmail.com">johnleanardguiriba48@gmail.com</a>
+          </p>
+          <p class="small">Send your sample/reference + video length + deadline.</p>
+        </div>
+        <div class="card">
+          <p><b>Links</b><br>
+            <a href="https://www.youtube.com" target="_blank">YouTube</a><br>
+            <a href="https://www.facebook.com" target="_blank">Facebook</a><br>
+            <a href="https://github.com/USERNAME" target="_blank">GitHub</a>
+          </p>
+        </div>
+      </div>
+    </section>
 
-/* ===== Hero ===== */
-.hero{
-  padding: 46px 26px;
-  background: linear-gradient(180deg, rgba(22,22,34,0.92), rgba(18,18,26,0.75));
-  position: relative;
-  overflow: hidden;
-}
+    <footer>
+      <p>© 2026 Leanard Guiriba</p>
+    </footer>
 
-.hero::before{
-  content: "";
-  position: absolute;
-  inset: -80px -80px auto auto;
-  width: 320px;
-  height: 320px;
-  background: radial-gradient(circle at 30% 30%, rgba(0,188,212,0.28), transparent 60%);
-  transform: rotate(10deg);
-  pointer-events: none;
-}
-
-.hero h1{
-  font-size: 44px;
-  margin-bottom: 8px;
-}
-.hero .tagline{
-  font-size: 18px;
-  color: var(--muted);
-  max-width: 720px;
-}
-
-.hero .actions{
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  margin-top: 18px;
-}
-
-/* ===== Buttons ===== */
-.btn{
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 12px 16px;
-  border-radius: 12px;
-  border: 1px solid var(--stroke);
-  background: rgba(255,255,255,0.06);
-  color: var(--text);
-  font-weight: 700;
-  letter-spacing: 0.2px;
-  text-decoration: none;
-}
-.btn:hover{
-  background: rgba(255,255,255,0.09);
-  text-decoration: none;
-}
-
-.btn.primary{
-  background: linear-gradient(90deg, rgba(0,188,212,0.95), rgba(0,188,212,0.60));
-  border: none;
-  color: #071015;
-}
-.btn.primary:hover{ filter: brightness(1.05); }
-
-.btn.danger{
-  background: linear-gradient(90deg, rgba(255,77,77,0.95), rgba(255,77,77,0.60));
-  border: none;
-  color: #140707;
-}
-
-/* ===== Two-column (About) ===== */
-.grid-2{
-  display: grid;
-  grid-template-columns: 1.2fr 0.8fr;
-  gap: 18px;
-}
-@media (max-width: 900px){
-  .grid-2{ grid-template-columns: 1fr; }
-}
-
-/* ===== Cards ===== */
-.card{
-  background: rgba(255,255,255,0.04);
-  border: 1px solid var(--stroke);
-  border-radius: 16px;
-  padding: 16px;
-}
-
-/* ===== Skills ===== */
-.skills{
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 14px;
-}
-
-.skill-title{
-  color: var(--text);
-  font-weight: 700;
-  margin-bottom: 6px;
-}
-.badges{
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin-top: 10px;
-}
-.badge{
-  padding: 6px 10px;
-  border-radius: 999px;
-  border: 1px solid var(--stroke);
-  background: rgba(255,255,255,0.04);
-  color: var(--muted);
-  font-size: 13px;
-}
-
-/* ===== Projects (Big Thumbnails) ===== */
-.projects{
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
-  gap: 16px;
-}
-
-.project{
-  overflow: hidden;
-  padding: 0;
-}
-
-.thumb{
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  background: rgba(255,255,255,0.06);
-  border-bottom: 1px solid var(--stroke);
-  display: block;
-  object-fit: cover;
-}
-
-.project-body{
-  padding: 16px;
-}
-
-.project h3{
-  margin: 0 0 6px;
-  font-size: 18px;
-}
-
-.project p{
-  margin: 0 0 12px;
-  color: var(--muted);
-}
-
-.project .links{
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-.link-pill{
-  display: inline-flex;
-  padding: 8px 10px;
-  border-radius: 12px;
-  border: 1px solid var(--stroke);
-  background: rgba(255,255,255,0.04);
-  color: var(--text);
-  font-weight: 600;
-}
-.link-pill:hover{
-  background: rgba(255,255,255,0.08);
-  text-decoration: none;
-}
-
-/* ===== Contact ===== */
-.contact{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 14px;
-}
-@media (max-width: 800px){
-  .contact{ grid-template-columns: 1fr; }
-}
-
-.small{
-  font-size: 14px;
-  color: var(--muted);
-}
-
-/* ===== Footer ===== */
-footer{
-  text-align: center;
-  padding: 26px 0 0;
-  color: rgba(243,243,246,0.60);
-}
-
+  </div>
+</body>
