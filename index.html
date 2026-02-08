@@ -1,53 +1,132 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8" />
-  <title>My Portfolio</title>
-</head>
 <body>
-  <h1>Hi! I’m John Leanard Guiriba</h1>
-  <p>Welcome to my Portfolio Video Edeting website.</p>
+  <div class="container">
 
- <h2>Skills</h2>
-<ul>
-  <li>Video Editing (Cutting, Trimming, Sequencing)</li>
-  <li>Color Correction & Color Grading</li>
-  <li>Audio Editing & Sound Syncing</li>
-  <li>Motion Graphics (Basic)</li>
-  <li>Transitions & Visual Effects</li>
-  <li>Text Animation & Subtitles</li>
-  <li>Storytelling & Pacing</li>
-  <li>Exporting for Social Media (YouTube, TikTok, Facebook)</li>
-</ul>
+    <div class="nav">
+      <div class="brand">Leanard • Video Editor</div>
+      <div>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Work</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
 
-  <h2>Projects</h2>
-  <ul>
-    <li><a href="https://youtu.be/gpFgh8b7gKw?si=JWDvKFcMFX3s6Kvf">Project 1</a></li>
-    <li><a href="https://youtu.be/_GYjtOD-Rwg?si=I1eRsGDu6GJOqjWO">Project 2</a></li>
-  </ul>
+    <section class="hero">
+      <h1>Leanard Guiriba</h1>
+      <p class="tagline">
+        Video Editor focused on clean storytelling, strong pacing, captions, and social media-ready videos.
+      </p>
+      <div class="actions">
+        <a class="btn primary" href="#projects">View My Work</a>
+        <a class="btn danger" href="cv.pdf" target="_blank">Download CV</a>
+      </div>
+    </section>
 
-  <h2>Contact</h2>
-  <p>Email: johnleanardguiriba48@gmail.com</p>
+    <section id="about">
+      <h2>About Me</h2>
+      <div class="grid-2">
+        <div class="card">
+          <p>
+            I edit short-form and long-form videos with a focus on clarity, rhythm, and audience retention.
+            I can handle basic motion graphics, subtitles, and audio cleanup.
+          </p>
+          <p class="small">Available for freelance and remote work.</p>
+        </div>
+        <div class="card">
+          <h3>Quick Info</h3>
+          <p class="small">Content: YouTube • TikTok • Reels</p>
+          <p class="small">Turnaround: 24–72 hours (depends on project)</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skills">
+        <div class="card">
+          <div class="skill-title">Editing</div>
+          <div class="badges">
+            <span class="badge">Cutting</span>
+            <span class="badge">Pacing</span>
+            <span class="badge">Storytelling</span>
+            <span class="badge">Captions</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="skill-title">Color & Audio</div>
+          <div class="badges">
+            <span class="badge">Color Correction</span>
+            <span class="badge">Basic Grading</span>
+            <span class="badge">Audio Cleanup</span>
+            <span class="badge">Sound Sync</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="skill-title">Tools</div>
+          <div class="badges">
+            <span class="badge">Premiere Pro</span>
+            <span class="badge">After Effects</span>
+            <span class="badge">DaVinci Resolve</span>
+            <span class="badge">CapCut</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Selected Work</h2>
+      <div class="projects">
+
+        <div class="card project">
+          <img class="thumb" src="assets/images/sample1.jpg" alt="Project 1 thumbnail">
+          <div class="project-body">
+            <h3>Short-form Reels Edit</h3>
+            <p>Fast cuts + captions for high retention. Optimized for mobile viewing.</p>
+            <div class="links">
+              <a class="link-pill" href="https://youtube.com" target="_blank">Watch</a>
+              <a class="link-pill" href="https://drive.google.com" target="_blank">Files</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card project">
+          <img class="thumb" src="assets/images/sample2.jpg" alt="Project 2 thumbnail">
+          <div class="project-body">
+            <h3>YouTube Video Edit</h3>
+            <p>Clean storytelling edit with audio leveling and simple motion graphics.</p>
+            <div class="links">
+              <a class="link-pill" href="https://youtube.com" target="_blank">Watch</a>
+              <a class="link-pill" href="https://drive.google.com" target="_blank">Files</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="contact">
+        <div class="card">
+          <p><b>Email</b><br>
+            <a href="mailto:johnleanardguiriba48@gmail.com">johnleanardguiriba48@gmail.com</a>
+          </p>
+          <p class="small">Send your project details + reference style, then I’ll reply with a quote.</p>
+        </div>
+        <div class="card">
+          <p><b>Links</b><br>
+            <a href="https://github.com/USERNAME" target="_blank">GitHub</a><br>
+            <a href="https://www.youtube.com" target="_blank">YouTube</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2026 Leanard Guiriba</p>
+    </footer>
+
+  </div>
 </body>
-</html>
-
-body {
-  background: #0f0f0f;
-  color: #fff;
-  font-family: Arial, sans-serif;
-  max-width: 1100px;
-  margin: auto;
-  padding: 40px;
-}
-
-section {
-  margin-bottom: 80px;
-}
-
-button {
-  background: #ff4d4d;
-  border: none;
-  padding: 12px 20px;
-  color: #fff;
-  cursor: pointer;
-}
