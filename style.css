@@ -269,3 +269,48 @@ footer{
   padding: 28px 0 0;
   color: rgba(255,255,255,0.55);
 }
+
+/* ===== Animations (CSS only) ===== */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(14px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes glowPulse {
+  0%, 100% { filter: drop-shadow(0 0 0 rgba(0,229,255,0)); }
+  50%      { filter: drop-shadow(0 0 18px rgba(0,229,255,0.22)); }
+}
+
+/* Smooth load animation */
+.hero h1, .hero .role, .hero .actions {
+  animation: fadeUp 700ms ease both;
+}
+
+.hero .role { animation-delay: 90ms; }
+.hero .actions { animation-delay: 160ms; }
+
+/* Cards animate in (simple) */
+.section, .card, .project {
+  animation: fadeUp 650ms ease both;
+}
+
+/* Slight hover motion for project cards */
+.project {
+  transition: transform 180ms ease, background 180ms ease, border-color 180ms ease;
+}
+.project:hover{
+  transform: translateY(-6px) scale(1.01);
+  border-color: rgba(255,255,255,0.16);
+}
+
+/* Button micro-interaction */
+.btn{
+  transition: transform 140ms ease, filter 140ms ease, background 140ms ease;
+}
+.btn:active{ transform: translateY(0); }
+
+/* Subtle glow on primary CTA */
+.btn.primary{
+  animation: glowPulse 2.4s ease-in-out infinite;
+}
+
