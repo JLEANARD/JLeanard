@@ -332,3 +332,12 @@ footer{
   .btn.primary{ animation: none; }
 }
 
+.thumb{
+  transition: transform 220ms ease, filter 220ms ease;
+}
+.project:hover .thumb{
+  transform: scale(1.03);
+  filter: brightness(1.05) contrast(1.05);
+}
+
+
